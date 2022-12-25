@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class test {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner sca = new Scanner(System.in);
 
 		ArrayList<Department> D = new ArrayList<Department>();
 
@@ -20,7 +20,7 @@ public class test {
 			System.out.println("Enter 1 for Register");
 			System.out.println("Enter 2 for Report");
 
-			int i = sc.nextInt();
+			int i = sca.nextInt();
 
 			if (i == 1) {
 
@@ -29,11 +29,11 @@ public class test {
 				while (condition0) {
 
 					System.out.println("Enter the Departmen Name ");
-					String departmentName = sc.next();
+					String departmentName = sca.next();
 					departmentObject.setDepartName(departmentName);
 
 					System.out.println("Enter the Departmen Number ");
-					int departmentnumber = sc.nextInt();
+					int departmentnumber = sca.nextInt();
 					departmentObject.setDepartId(departmentnumber);
 
 					D.add(departmentObject);
@@ -43,11 +43,11 @@ public class test {
 
 						Teacher teacherObject = new Teacher();
 						System.out.println("Enter the  Teacher Name ");
-						String name22 = sc.next();
+						String name22 = sca.next();
 						teacherObject.setTeacherName(name22);
 
 						System.out.println("Enter the  Teacher Number ");
-						int number22 = sc.nextInt();
+						int number22 = sca.nextInt();
 						teacherObject.setTeacherId(number22);
 
 						departmentObject.T.add(teacherObject);
@@ -58,11 +58,11 @@ public class test {
 							Student studentNumber = new Student();
 
 							System.out.println("Enter the Student Name ");
-							String studentName1 = sc.next();
+							String studentName1 = sca.next();
 							studentNumber.setStudentName(studentName1);
 
 							System.out.println("Enter the Student Number ");
-							int studentNumber1 = sc.nextInt();
+							int studentNumber1 = sca.nextInt();
 							studentNumber.setStudentNum(studentNumber1);
 
 							teacherObject.S.add(studentNumber);
@@ -72,17 +72,17 @@ public class test {
 								Course courseObj = new Course();
 
 								System.out.println("Enter the Course Name ");
-								String name3 = sc.next();
+								String name3 = sca.next();
 								courseObj.setCourseName(name3);
 
 								System.out.println("Enter the Course Number ");
-								int number3 = sc.nextInt();
+								int number3 = sca.nextInt();
 								courseObj.setCourseNum(number3);
 
 								studentNumber.C.add(courseObj);
 
 								System.out.println("do you want to add another Course??  yes = 1 or no = 2");
-								int Course = sc.nextInt();
+								int Course = sca.nextInt();
 								if (Course == 1) {
 									condition3 = true;
 
@@ -93,7 +93,7 @@ public class test {
 							}
 
 							System.out.println("do you want to add another Student??  yes = 1 or no = 2");
-							int student = sc.nextInt();
+							int student = sca.nextInt();
 							if (student == 1) {
 								condition2 = true;
 
@@ -104,7 +104,7 @@ public class test {
 						}
 
 						System.out.println("do you want to add another Teacher??  yes = 1 or no = 2");
-						int Teach = sc.nextInt();
+						int Teach = sca.nextInt();
 						if (Teach == 1) {
 							condition1 = true;
 
@@ -115,7 +115,7 @@ public class test {
 					}
 
 					System.out.println("do you want to add another Department?? yes = 1 or no = 2 ");
-					int num = sc.nextInt();
+					int num = sca.nextInt();
 					if (num == 1) {
 						condition0 = true;
 
