@@ -9,7 +9,7 @@ public class test {
 	public static void main(String[] args) {
 		Scanner sca = new Scanner(System.in);
 
-		ArrayList<Department> D = new ArrayList<Department>();
+		ArrayList<Department> DD = new ArrayList<Department>();
 
 		boolean condition = true;
 
@@ -36,7 +36,7 @@ public class test {
 					int departmentnumber = sca.nextInt();
 					departmentObject0.setDepartId(departmentnumber);
 
-					D.add(departmentObject0);
+					DD.add(departmentObject0);
 
 					boolean condition1 = true;
 					while (condition1) {
@@ -130,7 +130,7 @@ public class test {
 
 			else if (i == 2) {
 
-				for (Department dep : D) {
+				for (Department dep : DD) {
 
 					System.out.println("\n Departmen Name is " + dep.getDepartName());
 					System.out.println("Departmen Number is " + dep.getDepartId());
