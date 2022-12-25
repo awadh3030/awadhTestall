@@ -81,7 +81,7 @@ public class test {
 
 								studentNumber.C.add(courseObj);
 
-								System.out.println("do you want to add another Course??  yes = 1 or no = 2");
+								System.out.println("Do you want to add another Course??  yes = 1 or no = 2");
 								int Course = sca.nextInt();
 								if (Course == 1) {
 									condition3 = true;
@@ -92,7 +92,7 @@ public class test {
 								}
 							}
 
-							System.out.println("do you want to add another Student??  yes = 1 or no = 2");
+							System.out.println("Do you want to add another Student??  yes = 1 or no = 2");
 							int student = sca.nextInt();
 							if (student == 1) {
 								condition2 = true;
@@ -103,7 +103,7 @@ public class test {
 							}
 						}
 
-						System.out.println("do you want to add another Teacher??  yes = 1 or no = 2");
+						System.out.println("Do you want to add another Teacher??  yes = 1 or no = 2");
 						int Teach = sca.nextInt();
 						if (Teach == 1) {
 							condition1 = true;
@@ -114,7 +114,7 @@ public class test {
 						}
 					}
 
-					System.out.println("do you want to add another Department?? yes = 1 or no = 2 ");
+					System.out.println("Do you want to add another Department?? yes = 1 or no = 2 ");
 					int num = sca.nextInt();
 					if (num == 1) {
 						condition0 = true;
