@@ -17,7 +17,7 @@ public class test {
 			Department departmentObject = new Department();
 
 			System.out.println("Enter info");
-			System.out.println("Enter 1 for register");
+			System.out.println("Enter 1 for Register");
 			System.out.println("Enter 2 for Report");
 
 			int i = sc.nextInt();
@@ -28,11 +28,11 @@ public class test {
 
 				while (condition0) {
 
-					System.out.println("Enter the Departmen name ");
+					System.out.println("Enter the Departmen Name ");
 					String departmentName = sc.next();
 					departmentObject.setDepartName(departmentName);
 
-					System.out.println("Enter the Departmen number ");
+					System.out.println("Enter the Departmen Number ");
 					int departmentnumber = sc.nextInt();
 					departmentObject.setDepartId(departmentnumber);
 
@@ -42,11 +42,11 @@ public class test {
 					while (condition1) {
 
 						Teacher teacherObject = new Teacher();
-						System.out.println("Enter the  Teacher name ");
+						System.out.println("Enter the  Teacher Name ");
 						String name22 = sc.next();
 						teacherObject.setTeacherName(name22);
 
-						System.out.println("Enter the  Teacher number ");
+						System.out.println("Enter the  Teacher Number ");
 						int number22 = sc.nextInt();
 						teacherObject.setTeacherId(number22);
 
@@ -57,7 +57,7 @@ public class test {
 
 							Student studentNumber = new Student();
 
-							System.out.println("Enter the Student name ");
+							System.out.println("Enter the Student Name ");
 							String studentName1 = sc.next();
 							studentNumber.setStudentName(studentName1);
 
@@ -71,11 +71,11 @@ public class test {
 							while (condition3) {
 								Course courseObj = new Course();
 
-								System.out.println("Enter the Course name ");
+								System.out.println("Enter the Course Name ");
 								String name3 = sc.next();
 								courseObj.setCourseName(name3);
 
-								System.out.println("Enter the Course number ");
+								System.out.println("Enter the Course Number ");
 								int number3 = sc.nextInt();
 								courseObj.setCourseNum(number3);
 
@@ -132,18 +132,18 @@ public class test {
 
 				for (Department dep : D) {
 
-					System.out.println("\n Departmen name is " + dep.getDepartName());
-					System.out.println("Departmen number is " + dep.getDepartId());
+					System.out.println("\n Departmen Name is " + dep.getDepartName());
+					System.out.println("Departmen Number is " + dep.getDepartId());
 
 					for (Teacher te : dep.getT()) {
-						System.out.println("\n Teacher name is " + te.getTeacherName());
-						System.out.println("Teacher number is " + te.getTeacherId());
+						System.out.println("\n Teacher Name is " + te.getTeacherName());
+						System.out.println("Teacher Number is " + te.getTeacherId());
 						for (Student st : te.getS()) {
-							System.out.println("Student name is " + st.getStudentName());
-							System.out.println("Student number is " + st.getStudentNum());
+							System.out.println("StudentName is " + st.getStudentName());
+							System.out.println("Student Number is " + st.getStudentNum());
 							for (Course co : st.getC()) {
-								System.out.println("\n Course name is " + co.getCourseName());
-								System.out.println("Course number is " + co.getCourseNum());
+								System.out.println("\n Course Name is " + co.getCourseName());
+								System.out.println("Course Number is " + co.getCourseNum());
 								System.out.println("\n >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 								System.out.println("\n >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>S");
 
