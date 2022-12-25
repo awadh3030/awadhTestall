@@ -11,9 +11,9 @@ public class test {
 
 		ArrayList<Department> DD = new ArrayList<Department>();
 
-		boolean condition = true;
+		boolean condition01 = true;
 
-		while (condition) {
+		while (condition01) {
 			Department departmentObject0 = new Department();
 
 			System.out.println("Enter info");
