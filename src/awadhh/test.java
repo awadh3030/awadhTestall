@@ -14,7 +14,7 @@ public class test {
 		boolean condition = true;
 
 		while (condition) {
-			Department departmentObject = new Department();
+			Department departmentObject0 = new Department();
 
 			System.out.println("Enter info");
 			System.out.println("Enter 1 for Register");
@@ -30,13 +30,13 @@ public class test {
 
 					System.out.println("Enter the Departmen Name ");
 					String departmentName = sca.next();
-					departmentObject.setDepartName(departmentName);
+					departmentObject0.setDepartName(departmentName);
 
 					System.out.println("Enter the Departmen Number ");
 					int departmentnumber = sca.nextInt();
-					departmentObject.setDepartId(departmentnumber);
+					departmentObject0.setDepartId(departmentnumber);
 
-					D.add(departmentObject);
+					D.add(departmentObject0);
 
 					boolean condition1 = true;
 					while (condition1) {
@@ -50,7 +50,7 @@ public class test {
 						int number22 = sca.nextInt();
 						teacherObject.setTeacherId(number22);
 
-						departmentObject.T.add(teacherObject);
+						departmentObject0.T.add(teacherObject);
 
 						boolean condition2 = true;
 						while (condition2) {
