@@ -146,7 +146,7 @@ public class test {
 								System.out.println("Course Number is " + co.getCourseNum());
 								System.out.println("\n >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 								System.out.println("\n >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-
+								System.out.println("\n >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 								condition = false;
 								System.out.println("Bye!!!");
 
