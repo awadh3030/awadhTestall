@@ -131,7 +131,9 @@ public class test {
 			else if (i == 2) {
 
 				for (Department dep : DD) {
-
+					System.out.println("\n --------------------------------------");
+					System.out.println("\n ---------------------------------------");
+					System.out.println("\n -----------------------------------------");
 					System.out.println("\n Departmen Name is " + dep.getDepartName());
 					System.out.println("Departmen Number is " + dep.getDepartId());
 
@@ -144,10 +146,10 @@ public class test {
 							for (Course co : st.getC()) {
 								System.out.println("\n Course Name is " + co.getCourseName());
 								System.out.println("Course Number is " + co.getCourseNum());
-								System.out.println("\n >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-								System.out.println("\n >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-								System.out.println("\n >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-								condition = false;
+								System.out.println("\n --------------------------------------");
+								System.out.println("\n --------------------------------------");
+								System.out.println("\n ----------------------------------------");
+								condition01 = false;
 								System.out.println("Bye!!!");
 
 							}
