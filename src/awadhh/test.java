@@ -2,6 +2,7 @@ package awadhh;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Stack;
 
 
 public class test {
@@ -10,7 +11,8 @@ public class test {
 		Scanner sca = new Scanner(System.in);
 
 		ArrayList<Department> DD = new ArrayList<Department>();
-
+		 Stack<String> stack = new Stack<String>();
+		 
 		boolean condition01 = true;
 
 		while (condition01) {
@@ -19,6 +21,7 @@ public class test {
 			System.out.println("Enter info");
 			System.out.println("Enter 1 for Register");
 			System.out.println("Enter 2 for Report");
+			System.out.println("Enter 3 history");
 
 			int i = sca.nextInt();
 
@@ -31,11 +34,16 @@ public class test {
 					System.out.println("Enter the Departmen Name ");
 					String departmentName = sca.next();
 					departmentObject0.setDepartName(departmentName);
-
+					
+					stack.push(departmentName);
+					
 					System.out.println("Enter the Departmen Number ");
 					int departmentnumber = sca.nextInt();
 					departmentObject0.setDepartId(departmentnumber);
-
+					
+					String department = Integer.toString(departmentnumber);
+					stack.push(department);
+				
 					DD.add(departmentObject0);
 
 					boolean condition1 = true;
@@ -45,13 +53,16 @@ public class test {
 						System.out.println("Enter the  Teacher Name ");
 						String name22 = sca.next();
 						teacherObject.setTeacherName(name22);
+						stack.push(name22);
 
 						System.out.println("Enter the  Teacher Number ");
 						int number22 = sca.nextInt();
 						teacherObject.setTeacherId(number22);
-
 						departmentObject0.T.add(teacherObject);
-
+						String teacherO = Integer.toString(number22);
+						stack.push(teacherO);
+						
+						
 						boolean condition2 = true;
 						while (condition2) {
 
@@ -59,13 +70,15 @@ public class test {
 
 							System.out.println("Enter the Student Name ");
 							String studentName1 = sca.next();
-							studentNumber.setStudentName(studentName1);
-
+							studentNumber.setStudentName(studentName1);							
+							stack.push(studentName1);
+							
 							System.out.println("Enter the Student Number ");
 							int studentNumber1 = sca.nextInt();
 							studentNumber.setStudentNum(studentNumber1);
-
 							teacherObject.S.add(studentNumber);
+							String studentN = Integer.toString(studentNumber1);
+							stack.push(studentN);
 
 							boolean condition3 = true;
 							while (condition3) {
@@ -74,10 +87,13 @@ public class test {
 								System.out.println("Enter the Course Name ");
 								String name3 = sca.next();
 								courseObj.setCourseName(name3);
+								stack.push(name3);
 
 								System.out.println("Enter the Course Number ");
 								int number3 = sca.nextInt();
 								courseObj.setCourseNum(number3);
+								String courseO = Integer.toString(number3);
+								stack.push(courseO);
 
 								studentNumber.C.add(courseObj);
 
@@ -157,6 +173,19 @@ public class test {
 					}
 				}
 			}
+			else if (i == 3) {
+				
+				
+				for (String list : stack)
+				
+				{
+					System.out.println(list);
+					
+					
+				}
+				
+			}
+			
 		}
 	}
 }
